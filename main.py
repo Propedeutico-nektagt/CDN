@@ -15,7 +15,7 @@ env = Environment(
 )
 env.globals['getmtime'] = lambda z: datetime.fromtimestamp(os.path.getmtime(z))
 env.globals['getsize'] = os.path.getsize
-env.globals['toURLd'] = lambda d: URL + os.path.join(d)
+env.globals['toURLd'] = lambda d: URL + d
 env.globals['toURLf'] = lambda d,f: URL + os.path.join(d,f)
 template = env.get_template("template.html")
 
