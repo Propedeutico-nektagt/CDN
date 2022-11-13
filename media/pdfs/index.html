@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="{{ style }}" rel="stylesheet">
+        <link href="https://propedeutico-nektagt.github.io/CDN/templates/style.css" rel="stylesheet">
     </head>
     <body>
         <h1>Directory listing for: <p>dir/</p></h1>
@@ -21,22 +21,15 @@
                 </tr>
             </thead>
             <tbody>
-                {% for dir in dirnames %}
-                <tr>
-                    <td><i class="fa-regular fa-folder fa-xl"></i></td>
-                    <td>{{ dir }}</td>
-                    <td>{{ getmtime(dir) }}</td>
-                    <td>-</td>
-                </tr>
-                {% endfor %}
-                {% for f in filenames %}
+                
+                
                 <tr>
                       <td><i class="fa-regular fa-file fa-xl"></i></td>
-                      <td>{{ f }}</td>
-                      <td>{{ getmtime(f) }}</td>
-                      <td>{{ getsize(f) }}</td>
+                      <td>index.html</td>
+                      <td>2022-11-13 22:16:10.075686</td>
+                      <td>0</td>
                   </tr>
-                {% endfor %}
+                
             </tbody>
         </table>
         <hr>
