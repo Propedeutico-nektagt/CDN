@@ -9,7 +9,7 @@
         <link href="{{ style }}" rel="stylesheet">
     </head>
     <body>
-        <h1>Directory listing for: <p>dir/</p></h1>
+        <h1>Directory listing for: <p>{{ dirpath }}</p></h1>
         <hr>
         <table class="fixed">
             <thead>
@@ -32,9 +32,9 @@
                 {% for f in filenames %}
                 <tr>
                       <td><i class="fa-regular fa-file fa-xl"></i></td>
-                      <td>{{ f }}</td>
+                      <td><a href="{{ toURLf(dirpath,f) }}"></a>{{ f }}</td>
                       <td>{{ getmtime(f) }}</td>
-                      <td>{{ getsize(f) }}</td>
+                      <td>{{ getsize(f) }}kB</td>
                   </tr>
                 {% endfor %}
             </tbody>
