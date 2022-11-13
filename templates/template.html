@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
@@ -14,7 +14,7 @@
         <table class="fixed">
             <thead>
                 <tr>
-                    <th><i class="fa-regular fa-file"></i></th>
+                    <th></th>
                     <th>Filename</th>
                     <th>Last modified</th>
                     <th>Size</th>
@@ -29,8 +29,8 @@
                 </tr>
                 {% for i in range(5) %}
                 <tr>
-                    <td>{{ i }}</td>
-                    <td>the name of a file.jpeg</td>
+                    <td><i class="fa-regular fa-file-pdf fa-xl"></i></td>
+                    <td>the name of a file{{ i }}.jpeg</td>
                     <td>hoy</td>
                     <td>1kb</td>
                 </tr>
