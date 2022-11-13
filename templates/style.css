@@ -9,25 +9,32 @@ table.fixed {
     table-layout: fixed;
     width: 100%;
 }
+table.fixed tr {
+    height: 40px
+}
 
 table.fixed td {
     overflow: hidden;
 }
-table.fixed th {
-    text-align: left;
-}
 table.fixed th:nth-of-type(1) {
-    width: 2.5%;
+    width: 5%;
+    text-align: center;
 }
 table.fixed th:nth-of-type(2) {
     width: 50%;
+    text-align: left;
 }
 table.fixed th:nth-of-type(3) {
     width: 30%;
+    text-align: left;
 }
 table.fixed th:nth-of-type(4) {
-    width: 17.5%;
+    width: 15%;
+    text-align: left;
 }
 table.fixed td {
     font-family: monospace;
+}
+table.fixed td:nth-of-type(1) {
+    text-align: center;
 }
