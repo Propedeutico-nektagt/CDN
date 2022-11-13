@@ -1,5 +1,9 @@
 /* My own styles to serve */
 
+body{
+  margin: 1%;
+}
+
 h1 p {
     font-family: monospace;
     display: inline;

@@ -9,7 +9,7 @@
         <link href="{{ style }}" rel="stylesheet">
     </head>
     <body>
-        <h1>Directory listing for: <p>{{ dirpath }}</p></h1>
+        <h1>Directory listing for: <p><a href="{{ toURLd(dirpath) }}">{{ dirpath }}</a></p></h1>
         <hr>
         <table class="fixed">
             <thead>
@@ -21,10 +21,16 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                  <td><i class="fa-regular fa-folder fa-xl"></i></td>
+                  <td><a href="{{ toURLf(dirpath,'..') }}">{{ '..' }}</a></td>
+                  <td></td>
+                  <td></td>
+                </tr>
                 {% for dir in dirnames %}
                 <tr>
                     <td><i class="fa-regular fa-folder fa-xl"></i></td>
-                    <td><a href="{{ toURLd(dir) }}">{{ dir }}</a></td>
+                    <td><a href="{{ toURLf(dirpath,dir) }}">{{ dir }}</a></td>
                     <td>{{ getmtime(dir) }}</td>
                     <td>-</td>
                 </tr>
