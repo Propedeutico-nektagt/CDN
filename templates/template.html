@@ -37,7 +37,7 @@
                 {% endfor %}
                 {% for f in filenames %}
                 <tr>
-                      <td><i class="fa-regular fa-file fa-xl"></i></td>
+                      <td><i class="fa-regular {{ gicon(f) }} fa-xl"></i></td>
                       <td><a href="{{ toURLf(dirpath,f) }}">{{ f }}</a></td>
                       <td>{{ getmtime(f) }}</td>
                       <td>{{ getsize(f) }}kB</td>
