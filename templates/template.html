@@ -21,12 +21,14 @@
                 </tr>
             </thead>
             <tbody>
+                {% if dirpath != 'media/' %}
                 <tr>
                   <td><i class="fa-regular fa-folder fa-xl"></i></td>
                   <td><a href="{{ toURLf(dirpath,'..') }}">{{ '..' }}</a></td>
                   <td></td>
                   <td></td>
                 </tr>
+                {% endif %}
                 {% for dir in dirnames %}
                 <tr>
                     <td><i class="fa-regular fa-folder fa-xl"></i></td>
